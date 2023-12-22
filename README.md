@@ -31,7 +31,3 @@ _Технологический стэк:_
 ### Запуск собранного проекта
 
 `npm start`
-
-### Docker
-
-`make up` (для запуска билда, вызов команды: `docker-compose up --build --remove-orphans`)
