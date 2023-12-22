@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+#  _Описание проекта:_ SPA(Single Page Application) Менеджер задач.
 
-## Getting Started
+_Технологический стэк:_
 
-First, run the development server:
+### ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)  ![Next.js](https://img.shields.io/badge/next.js-%23593d88.svg?style=for-the-badge&logo=next.js&logoColor=white&color=black)  ![TypeScript](https://img.shields.io/badge/typescript-black.svg?style=for-the-badge&logo=typescript&logoColor=blue)  ![MongoDB](https://img.shields.io/badge/mongodb-%23646CFF.svg?style=for-the-badge&logo=mongodb&logoColor=green)  ![Prisma](https://img.shields.io/badge/prisma-%23646CFF.svg?style=for-the-badge&logo=prisma&logoColor=black)  ![TailwindCSS](https://img.shields.io/badge/tailwind-%23646CFF.svg?style=for-the-badge&logo=tailwindcss&logoColor=blue&color=black)  ![Clerk](https://img.shields.io/badge/clerk-%23593d88.svg?style=for-the-badge&logo=next.js&logoColor=white&color=black)  ![Styled-Components](https://img.shields.io/badge/styled-components-%23593d88.svg?style=for-the-badge&logo=css&logoColor=white&color=blue)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Функционал
+- Регистрация и авториязация церез Github, Google
+- Редактирование профиля, выход из аккаунта
+- Добавление задачи (модальное окно CreateContent)
+- Редактирование задачи (модальное окно EditContent)
+- Реализованы следущие роуты (страницы)
+  - / - все задачи
+  - /completed - выполненные задачи
+  - /important - важные задачи
+  - /imcomplete - невыполненные задачи
+- Все задачи сортируются по дате создания (по убыванию)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Установка зависимостей
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+`npm install`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Запуск проекта на локальном сервере
 
-## Learn More
+`npm run dev`
 
-To learn more about Next.js, take a look at the following resources:
+### Сборка проекта
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`npm run build`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Запуск собранного проекта
 
-## Deploy on Vercel
+`npm start`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Docker
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+`make up` (для запуска билда, вызов команды: `docker-compose up --build --remove-orphans`)
