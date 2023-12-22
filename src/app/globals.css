@@ -17,11 +17,60 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #181818;
+  font-size: 17px;
+  color: #fff;
+  height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #27ae60;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.loader-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cl-internal-b3fm6y {
+  display: none;
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 90%;
+  }
 }
